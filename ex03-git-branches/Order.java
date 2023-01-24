@@ -3,16 +3,15 @@
 public class Order {
 
     private Cart cart;
+    private Customer customer;
+    private int id;
 
-    private String customerName;
-    private String customerEmail;
-    private String customerPhone;
 
-    public Order( Cart c, String n, String e, String p ) {
+    public Order( Cart c, String n, String e, int id ) {
         cart = c;
-        customerName = n;
-        customerEmail = e;
-        customerPhone = p;
+        customer.setName(n);
+        customer.setEmail(e);
+        customer.setId(id);
       }
 
     public double total() {
@@ -20,15 +19,7 @@ public class Order {
         return 0.0;
     }
 
-    public String customerName() {
-      return customerName;
-    }
-    public String customerEmail() {
-      return customerEmail;
-    }
-    public String customerAddress() {
-      return customerPhone;
-    }
+
 }
 
 
