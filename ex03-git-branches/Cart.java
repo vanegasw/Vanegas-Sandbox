@@ -26,4 +26,18 @@ public class Cart {
 
         return newOrder;
     }
+
+    /* Calculates the total price */
+    public void calcTotal(){
+        double newTotal = 0.0;
+        for(CartItem cartItem:cartItems){
+            newTotal =+ cartItem.price()*cartItem.getQuantity();
+        }
+        total = newTotal;
+    }
+    //Setters and getters
+    public double getTotal(){
+        calcTotal();
+        return total;
+    }
 }

@@ -26,4 +26,8 @@ public class CartItem {
     subtotal = item.getPrice() * quantity;
     return subtotal;
   }
+
+  public int getQuantity(){
+    return quantity;
+  }
 }
