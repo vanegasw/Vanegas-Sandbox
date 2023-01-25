@@ -21,4 +21,7 @@ public class Item {
         return quantity;
     }
 
+    public String toString(){
+        return (getDescription());
+    }
 }
