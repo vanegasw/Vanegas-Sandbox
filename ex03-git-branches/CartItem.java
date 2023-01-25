@@ -7,10 +7,15 @@ public class CartItem {
 
   
   public CartItem(Item newItem) {
-    subtotal = newItem.getPrice()*quantity;
-    //quantity = 0;
+    item = newItem;
+    subtotal = newItem.getPrice();
   }
-  
+
+  public CartItem(Item newItem, int newQuantity) {
+    item = newItem;
+    subtotal = newItem.getPrice()*newQuantity;
+    quantity = newQuantity;
+  }
 
   public String cartDescription() {
     String description = item.getDescription();
