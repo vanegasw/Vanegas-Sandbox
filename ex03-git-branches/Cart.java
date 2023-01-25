@@ -38,7 +38,7 @@ public class Cart {
 
     public void printCart(){
         for(CartItem cartItem:cartItems){
-            System.out.println(cartItem.cartDescription()+" | Price*Quantity -> |"+cartItem.price()+" * "+cartItem.getQuantity());
+            System.out.println(cartItem.cartDescription()+" | Price*Quantity -> | "+cartItem.getItemPrice()+" * "+cartItem.getQuantity()+" = "+cartItem.price());
         }
     }
     //Setters and getters

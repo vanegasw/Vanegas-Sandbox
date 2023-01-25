@@ -30,4 +30,8 @@ public class CartItem {
   public int getQuantity(){
     return quantity;
   }
+
+  public double getItemPrice(){
+    return item.getPrice();
+  }
 }
