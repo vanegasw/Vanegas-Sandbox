@@ -4,18 +4,16 @@ public class Order {
 
     private Cart cart;
     private Customer customer;
-    private int id;
+    private int ID;
 
 
-    public Order( Cart c, String n, String e, int id ) {
-        cart = c;
-        customer.setName(n);
-        customer.setEmail(e);
-        customer.setId(id);
+    public Order(Cart newCart, Customer newCustomer ){
+        cart = newCart;
+        customer = newCustomer;
+        //TODO: initialize Order ID
       }
 
     public double total() {
-
         return 0.0;
     }
 
