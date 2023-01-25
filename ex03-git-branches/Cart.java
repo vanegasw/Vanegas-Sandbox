@@ -11,4 +11,10 @@ public class Cart {
         CartItem newCartItem = new CartItem(newItem,quantity);
         cartItems.add(newCartItem);
     }
+
+    public Order checkout(Customer newCustomer){
+        Order newOrder = new Order(null, newCustomer);
+
+        return newOrder;
+    }
 }
