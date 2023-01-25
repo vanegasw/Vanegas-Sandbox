@@ -24,7 +24,9 @@ public class Order {
         System.out.println("Name: "+customer.getName()+" | Email: "+customer.getEmail());
         System.out.println("Cart Information:");
         cart.printCart();
-        System.out.println("Total payemnt due + Tax (10%): " + cart.getTotal() +" + "+ cart.getTotal()*0.1 + " = " + (cart.getTotal()*1.1));
+        System.out.print("Total payemnt due + Tax (10%): " + cart.getTotal() +" + "+ cart.getTotal()*0.1 + " = ");
+        System.out.printf("%.2f", (cart.getTotal()*1.1));
+        System.out.println("");
     }
 
 }

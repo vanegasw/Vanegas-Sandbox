@@ -31,10 +31,10 @@ public class Main {
     alpha.printCustomer();
     System.out.println("________________________________________");
 
-    // Checkout the cart
-
+    // Checkout the cart thus creating an Order
+    Order order1 = cart.checkout(alpha);
     // Print receipt
-
+    order1.receipt();
   }
 }
 

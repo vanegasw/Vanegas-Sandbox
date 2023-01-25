@@ -21,7 +21,7 @@ public class Cart {
     }
 
     public Order checkout(Customer newCustomer){
-        Cart newcart = new Cart(true);
+        Cart newcart = new Cart(cartItems,true);
         Order newOrder = new Order(newcart, newCustomer);
 
         return newOrder;
@@ -31,7 +31,7 @@ public class Cart {
     public void calcTotal(){
         double newTotal = 0.0;
         for(CartItem cartItem:cartItems){
-            newTotal =+ cartItem.price()*cartItem.getQuantity();
+            newTotal =+ cartItem.price();//*cartItem.getQuantity();
         }
         total = newTotal;
     }

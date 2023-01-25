@@ -34,4 +34,8 @@ public class CartItem {
   public double getItemPrice(){
     return item.getPrice();
   }
+
+  public String toString(){
+    return ("Item: "+item.toString()+" | Quantity: " + quantity + " | Subtotal: " + subtotal);
+  }
 }
