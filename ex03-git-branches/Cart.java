@@ -35,6 +35,12 @@ public class Cart {
         }
         total = newTotal;
     }
+
+    public void printCart(){
+        for(CartItem cartItem:cartItems){
+            System.out.println(cartItem.cartDescription()+" | Price*Quantity -> |"+cartItem.price()+" * "+cartItem.getQuantity());
+        }
+    }
     //Setters and getters
     public double getTotal(){
         calcTotal();

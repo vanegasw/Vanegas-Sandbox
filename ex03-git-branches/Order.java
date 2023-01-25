@@ -23,9 +23,8 @@ public class Order {
         System.out.println("Customer Information:");
         System.out.println("Name: "+customer.getName()+" | Email: "+customer.getEmail());
         System.out.println("Cart Information:");
-        System.out.println();
-        System.out.println("Total payemnt due: " + cart.getTotal());
+        cart.printCart();
+        System.out.println("Total payemnt due + Tax (10%): " + cart.getTotal() +" + "+ cart.getTotal()*0.1 + " = " + (cart.getTotal()*1.1));
     }
-
 
 }
