@@ -10,7 +10,7 @@ public class Main {
     */
 
     // Create a cart and add some items from the inventory.
-    Cart cart = new Cart();
+    Cart cart = new Cart(false);
 
     // Checkout the cart
 

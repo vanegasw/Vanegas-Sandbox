@@ -12,8 +12,17 @@ public class Cart {
         cartItems.add(newCartItem);
     }
 
+    Cart(boolean isPaid){
+        paid = true;
+    }
+    Cart(ArrayList<CartItem> newCartItems, boolean isPaid){
+        cartItems = newCartItems;
+        paid = isPaid;
+    }
+
     public Order checkout(Customer newCustomer){
-        Order newOrder = new Order(null, newCustomer);
+        Cart newcart = new Cart(true);
+        Order newOrder = new Order(newcart, newCustomer);
 
         return newOrder;
     }
