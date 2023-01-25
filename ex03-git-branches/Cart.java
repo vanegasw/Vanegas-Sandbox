@@ -7,7 +7,7 @@ public class Cart {
     private double total;
     private boolean paid; 
 
-    public void add(){
-        
+    public void add(CartItem newItem, int quantity){
+        cartItems.add(newItem);
     }
 }
