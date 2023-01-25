@@ -3,35 +3,19 @@
 public class Order {
 
     private Cart cart;
+    private Customer customer;
+    private int ID;
 
-    private String customerName;
-    private String customerEmail;
-    private String customerPhone;
 
-    public Order( Cart c, String n, String e, String p ) {
-        cart = c;
-        customerName = n;
-        customerEmail = e;
-        customerPhone = p;
+    public Order(Cart newCart, Customer newCustomer ){
+        cart = newCart;
+        customer = newCustomer;
+        //TODO: initialize Order ID
       }
 
     public double total() {
-
         return 0.0;
     }
 
-    public String customerName() {
-      return customerName;
-    }
-    public String customerEmail() {
-      return customerEmail;
-    }
-    public String customerAddress() {
-      return customerPhone;
-    }
+
 }
-
-
-
-
-
